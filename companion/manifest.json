@@ -1,0 +1,30 @@
+{
+	"$schema": "../node_modules/@companion-surface/base/assets/manifest.schema.json",
+	"type": "surface",
+	"id": "barco-ec50",
+	"name": "Barco EC-50",
+	"shortname": "EC-50",
+	"description": "Barco EC-50 event controller keyboard: 82 keys, 45 LCD keys with RGB backlight, key LEDs, the T-bar and the console lights.",
+	"version": "0.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-surface-barco-ec50.git",
+	"bugs": "https://github.com/bitfocus/companion-surface-barco-ec50/issues",
+	"maintainers": [
+		{
+			"name": "Mastix"
+		}
+	],
+	"runtime": {
+		"type": "node22",
+		"apiVersion": "1.3.0",
+		"entrypoint": "../dist/main.js"
+	},
+	"products": ["EC-50"],
+	"keywords": ["barco", "event master", "ec-50", "tbar", "lcd"],
+	"usbIds": [
+		{
+			"vendorId": 1536,
+			"productIds": [822]
+		}
+	]
+}

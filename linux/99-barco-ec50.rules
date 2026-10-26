@@ -1,0 +1,12 @@
+# Barco EC-50 keyboard: Companion surface module
+#
+# The EC-50 is an FTDI chip with Barco's own USB vendor id (0x0600), so the ftdi_sio kernel
+# driver never binds and libusb can open it directly. This only grants access. It is the
+# same rule Barco ships as barcoipusb.rules, plus uaccess for a logged-in desktop user.
+#
+# Install:
+#   sudo cp 99-barco-ec50.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload-rules && sudo udevadm trigger
+#   then unplug and replug the EC-50
+
+SUBSYSTEM=="usb", ATTR{idVendor}=="0600", MODE="0666", GROUP="plugdev", TAG+="uaccess"
