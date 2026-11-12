@@ -7,8 +7,8 @@
 	"description": "Barco EC-50 event controller keyboard: 82 keys, 45 LCD keys with RGB backlight, key LEDs, the T-bar and the console lights.",
 	"version": "0.0.1",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-surface-barco-ec50.git",
-	"bugs": "https://github.com/bitfocus/companion-surface-barco-ec50/issues",
+	"repository": "git+https://github.com/greatmastix/barco-ec50.git",
+	"bugs": "https://github.com/greatmastix/barco-ec50/issues",
 	"maintainers": [
 		{
 			"name": "Mastix"
